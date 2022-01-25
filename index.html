@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <title>Project: Library</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>List of all my favorite books</h1>
+    </div>
+    <div class="line2">
+      <button class="btn">+ New Book</button>
+    </div>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Favorite Quotes</th>
+        <th>Read?</th>
+        <th></th>
+      </tr>
+    </table>
+  </div>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <form action="" name="new-book-form" id="new-book-form">
+        <label for="bookTitle">Title</label>
+        <input type="text" name="bookTitle" id="bookTitle" required>
+        <label for="bookAuthor">Author</label>
+        <input type="text" name="bookAuthor" id="bookAuthor" required>
+        <label for="favoriteQuotes">Favorite Quotes</label>
+        <textarea name="favoriteQuotes" id="favoriteQuotes"></textarea>
+        <div class="book-read-finished">Have you finished reading the book?</div>
+        <label class="switch" for="read">
+          <input type="checkbox" name="read" id="read">
+          <span class="slider round"></span>
+        </label>
+        <div class="buttons">
+          <button id="cancel-btn">Cancel</button>
+          <button id="saveBtn">Save</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <script src="./js/script.js" type="module"></script>
+</body>
+</html>
